@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC);
+
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-size: 150px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+img {
+  width: 128px;
+  height: 128px;
+  padding: 25px;
+  display: inline-block;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
