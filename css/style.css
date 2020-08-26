@@ -1,9 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC);
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two|Nixie+One|Sacramento|Petit+Formal+Script);
 
 h1 {
   font-family: "Amatic SC", cursive;
   font-size: 150px;
   margin-top: 100px;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Sacramento", cursive;
+  font-size: 60px;
   text-align: center;
 }
 
