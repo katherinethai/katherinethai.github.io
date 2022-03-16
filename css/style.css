@@ -1,17 +1,121 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC);
 @import url(https://fonts.googleapis.com/css?family=Lobster+Two|Nixie+One|Sacramento|Petit+Formal+Script);
 
+@font-face {
+    font-family: sofiaBlack;
+    src: url("fonts/Sofia Pro Black Az.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sofiaBlack;
+    src: url("fonts/Sofia Pro Black Italic Az.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: sofiaBold;
+    src: url("fonts/Sofia Pro Bold Az.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sofiaBold;
+    src: url("fonts/Sofia Pro Bold Italic Az.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: sofiaExtraLight;
+    src: url("fonts/Sofia Pro ExtraLight Az.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sofiaExtraLight;
+    src: url("fonts/Sofia Pro ExtraLight Italic Az.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: sofiaLight;
+    src: url("fonts/Sofia Pro Light Az.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sofiaLight;
+    src: url("fonts/Sofia Pro Light Italic Az.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: sofiaMedium;
+    src: url("fonts/Sofia Pro Medium Az.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sofiaMedium;
+    src: url("fonts/Sofia Pro Medium Italic Az.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: sofiaRegular;
+    src: url("fonts/Sofia Pro Regular Az.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sofiaRegular;
+    src: url("fonts/Sofia Pro Regular Italic Az.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: sofiaSemiBold;
+    src: url("fonts/Sofia Pro Semi Bold Az.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sofiaSemiBold;
+    src: url("fonts/Sofia Pro Semi Bold Italic Az.otf") format("opentype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: sofiaUltraLight;
+    src: url("fonts/Sofia Pro UltraLight Az.otf") format("opentype");
+}
+
+@font-face {
+    font-family: sofiaUltraLight;
+    src: url("fonts/Sofia Pro UltraLight Italic Az.otf") format("opentype");
+    font-style: italic;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+}
+
 h1 {
-  font-family: "Amatic SC", cursive;
-  font-size: 150px;
+  font-family: "sofiaBold";
+  font-size: 140px;
   margin-top: 100px;
   text-align: center;
+}
+
+h2 {
+    font-family: "sofiaBlack";
+    font-size: 40px;
 }
 
 h3 {
   font-family: "Sacramento", cursive;
   font-size: 60px;
   text-align: center;
+}
+
+p {
+    font-family: "sofiaLight";
+    font-size: 20px;
 }
 
 img {
@@ -21,7 +125,51 @@ img {
   display: inline-block;
 }
 
+div {
+    display: block;
+}
+
 .container {
   width: 100%;
   text-align: center;
+}
+
+.index_bg {
+  /* The image used */
+  background-image: url("../images/background-01.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: scroll;
+
+}
+
+.contact_bg {
+  	margin-top: 60px;
+	margin-left: 60px;
+	margin-right: 60px;
+    padding-bottom: 2cm;
+
+    /* The image used */
+    background-image: url("../images/contact-background-08.png");
+
+    /* Full height */
+    height: 100%;
+    width: 10%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.posts-wrapper {
+	max-width: 1000px;
+	margin-left:auto;
+	margin-right:auto;
 }
