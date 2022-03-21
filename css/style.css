@@ -33,6 +33,10 @@ body {
   box-sizing: border-box;
 }
 
+#contact {
+  background-color: #c2c1f8;
+}
+
 .navbar {
   overflow: hidden;
   border-bottom-style: solid;
@@ -98,6 +102,17 @@ body {
   margin-left: auto;
   display: block;
   max-width: 1000px;
+  min-height: 2000px;
+  position: relative;
+}
+
+.contact-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 300px;
   min-height: 2000px;
   position: relative;
 }
@@ -265,5 +280,35 @@ ul a {
 
 ul a:hover {
   background-color: #e8e8f4;
+  text-decoration: underline;
+}
+
+h4 {
+  display: block;
+  font-family: sofiaBold;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contact-buttons {
+  text-align: center;
+}
+
+.contact-buttons a {
+  font-family: sofiaLight;
+  color: #000000;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-decoration: none;
+  text-align: center;
+}
+
+a.button {
+   width: 150px;
+   text-align: center;
+}
+
+.contact-buttons a:hover {
   text-decoration: underline;
 }
