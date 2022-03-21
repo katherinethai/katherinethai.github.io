@@ -1,35 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Katherine Thai</title>
+  <meta name="description" content="Katherine Thai's website">
+  <meta name="author" content="Katherine Thai">
+
+  <meta property="og:title" content="Katherine Thai">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://katherinethai.github.io/">
+  <meta property="og:description" content="Katherine Thai's personal website">
+  <meta property="og:image:secure_url" content="images/about-photo-05.png">
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
-  <body>
-    <div class="wrapper index_bg">
 
-        <div class="posts-wrapper">
-            <div class="post">
-                <img src='images/about-photo-05.png' style="float:right; width:300px; height: 300px" />
+<body>
+  <div class="navbar" id="myNavbar"  id="home">
+    <a href="index.html" class="navbar-name">KATHERINE THAI</a>
+    <a href="contact.html" class="navbar-contact" id="navbar-contact">CONTACT</a>
+    <a href="javascript:void(0);" class="icon" onclick="iconFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-                <h1>katherine thai</h1>
-
-                <h2>kbthai@umass.edu // <a href="https://www.github.com/katherinethai">github</a> // <a href="https://www.twitter.com/kthai1618">twitter</a></h2>
-                <br>
-
-                <br>
-
-                <p>I am a second year PhD student in Computer Science at <a href="https://www.cics.umass.edu">UMass Amherst</a> and a member of <a href="https://nlp.cs.umass.edu">UMass NLP</a>. <br>
-                <br> I'm broadly interested in applying NLP methods to the literary domain.<br>
-
-                    <br>
-                    Previously, I was an undergraduate at Rutgers University
-                    where I majored in Math, English, and Computer Science.
-                </p>
-
-
-            </div>
+  <div class="container">
+    <img id="background" src="images/background-01.png"/>
+    <div class="prof-pic">
+        <img src="images/about-photo-05.png" style="max-height:300px; width: auto;">
+    </div>
+    <div class="about">
+        <h1>About</h1>
+        <p>I am a second year PhD student in Computer Science at UMass Amherst advised by <a href="https://people.cs.umass.edu/~miyyer/">Mohit Iyyer</a> and a member of <a href="https://nlp.cs.umass.edu/">UMass NLP</a>.
+            <br><br>
+            I'm broadly interested in applying NLP methods to the literary texts.
+            <br><br>
+            Previously, I was an undergraduate at Rutgers University where I majored in Math, English, and Computer Science. I've participated in 4 NSF REUs and done research in cool places like Hong Kong and the American Museum of Natural History in NYC.
+            <br><br>
+            My other interests include the color purple, skating, dogs (small huskies in particular), Kazuo Ishiguro, teaching/mentoring high school students, makeup/skincare, karaoke, and <a href="https://open.spotify.com/playlist/3gKyKK54RJ0OqN2bRhPLLI?si=13087acf8c6b424d">very specific Spotify playlists</a>.</p>
+    </div>
+    <div class="publications">
+        <h1 id="pub-header">Publications</h1>
+        <div class="pub-header">
+            <h3 class="pub-title">RELiC:<br>Retrieving Evidence for Literary Claims</h3>
+            <h2 class="pub-num">01</h2>
+        </div>
+        <div class="pub-info">
+            <br><br><br>
+            <p style="font-size: 16px;">ACL 2022</p>
+            <ul>
+                <a href="https://arxiv.org/abs/2203.10053" class="button">Paper</a>
+                <a href="https://relic.cs.umass.edu/" class="button">Website</a>
+                <a href="https://github.com/martiansideofthemoon/relic-retrieval" class="button">Code</a>
+            </ul>
         </div>
     </div>
-  </body>
+  </div>
+
+  <script src="javascript/scripts.js"></script>
+</body>
 </html>

@@ -1,15 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans|Amatic+SC);
-@import url(https://fonts.googleapis.com/css?family=Lobster+Two|Nixie+One|Sacramento|Petit+Formal+Script);
-
 @font-face {
     font-family: sofiaBlack;
     src: url("fonts/Sofia Pro Black Az.otf") format("opentype");
-}
-
-@font-face {
-    font-family: sofiaBlack;
-    src: url("fonts/Sofia Pro Black Italic Az.otf") format("opentype");
-    font-style: italic;
 }
 
 @font-face {
@@ -18,20 +9,8 @@
 }
 
 @font-face {
-    font-family: sofiaBold;
-    src: url("fonts/Sofia Pro Bold Italic Az.otf") format("opentype");
-    font-style: italic;
-}
-
-@font-face {
-    font-family: sofiaExtraLight;
-    src: url("fonts/Sofia Pro ExtraLight Az.otf") format("opentype");
-}
-
-@font-face {
-    font-family: sofiaExtraLight;
-    src: url("fonts/Sofia Pro ExtraLight Italic Az.otf") format("opentype");
-    font-style: italic;
+    font-family: sofiaSemiBold;
+    src: url("fonts/Sofia Pro Semi Bold Az.otf") format("opentype");
 }
 
 @font-face {
@@ -45,131 +24,245 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: sofiaMedium;
-    src: url("fonts/Sofia Pro Medium Az.otf") format("opentype");
+body {
+  background-color: #f6f6ee;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-@font-face {
-    font-family: sofiaMedium;
-    src: url("fonts/Sofia Pro Medium Italic Az.otf") format("opentype");
-    font-style: italic;
+.navbar {
+  overflow: hidden;
+  border-bottom-style: solid;
+  border-width: 2px;
+
 }
 
-@font-face {
-    font-family: sofiaRegular;
-    src: url("fonts/Sofia Pro Regular Az.otf") format("opentype");
+.navbar-name {
+  float: left;
+  font-family: sofiaBlack;
 }
 
-@font-face {
-    font-family: sofiaRegular;
-    src: url("fonts/Sofia Pro Regular Italic Az.otf") format("opentype");
-    font-style: italic;
+.navbar-contact {
+  border-left-style: solid;
+  border-width: 2px;
+  float: right;
+  font-family: sofiaLight
 }
 
-@font-face {
-    font-family: sofiaSemiBold;
-    src: url("fonts/Sofia Pro Semi Bold Az.otf") format("opentype");
-}
-
-@font-face {
-    font-family: sofiaSemiBold;
-    src: url("fonts/Sofia Pro Semi Bold Italic Az.otf") format("opentype");
-    font-style: italic;
-}
-
-@font-face {
-    font-family: sofiaUltraLight;
-    src: url("fonts/Sofia Pro UltraLight Az.otf") format("opentype");
-}
-
-@font-face {
-    font-family: sofiaUltraLight;
-    src: url("fonts/Sofia Pro UltraLight Italic Az.otf") format("opentype");
-    font-style: italic;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    background-attachment: fixed;
-}
-
-h1 {
-  font-family: "sofiaBold";
-  font-size: 140px;
-  margin-top: 100px;
+.navbar a {
+  display: block;
+  color: #000000;
   text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
 }
 
-h2 {
-    font-family: "sofiaBlack";
-    font-size: 40px;
+.navbar .icon {
+  display: none;
 }
 
-h3 {
-  font-family: "Sacramento", cursive;
-  font-size: 60px;
-  text-align: center;
-}
-
-p {
-    font-family: "sofiaLight";
-    font-size: 20px;
-}
-
-img {
-  width: 128px;
-  height: 128px;
-  padding: 25px;
-  display: inline-block;
-}
-
-div {
+@media screen and (max-width: 770px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
     display: block;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media (min-width: 576px)
+.container {
+    max-width: 600px;
 }
 
 .container {
-  width: 100%;
-  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 1000px;
+  min-height: 2000px;
+  position: relative;
 }
 
-.index_bg {
-  /* The image used */
-  background-image: url("../images/background-01.png");
-
-  /* Full height */
+#background {
   height: 100%;
+  width: 100%;
+  object-fit: contain
+}
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.about {
+  position: absolute;
+  top: 8%;
+  left:10%;
+  width: 42%;
+  float: left;
+}
 
-  overflow: scroll;
+.publications-header {
+  position: absolute;
+  top: 33%;
+  left:10%;
+  width: 42%;
+  float: left;
+}
+
+.publications {
+  position: absolute;
+  top: 33%;
+  left: 10%;
+  width: 77%;
+  float: left;
+}
+
+h1 {
+  font-family: sofiaBold;
+  font-size: 55px;
+  text-align: left;
+}
+
+h2 {
+  font-family: sofiaBold;
+  font-size: 43px;
+  text-align: left;
+}
+
+h3 {
+  font-family: sofiaBold;
+  font-size: 30px;
+}
+
+p {
+  font-family: sofiaLight;
+  font-size: 18px;
+}
+
+.prof-pic {
+  display: inline;
+  float: right;
+  position: absolute;
+  top: 8%;
+  right:10%;
+}
+
+.pub-num {
+  display: block;
+  float: left;
+}
+
+#pub-header {
+  float: left;
+}
+
+.pub-title {
+  display: block;
+  float: right;
+  text-align: right;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-left: 45px;
+}
+
+.pub-info {
+  margin-top: 120px;
+  text-align: right;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+    .prof-pic {
+        display: none;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 12px;
+    }
+    .about {
+        display: block;
+        margin-bottom: 35px;
+        width: 85%;
+        top: 3%;
+    }
+    .pub-num {
+      display: none;
+    }
+    .publications {
+        display: block;
+        width: 80%;
+        right: auto;
+        left: 10%;
+    }
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      max-width: 1000px;
+      min-height: 750px;
+      position: relative;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    .pub-title {
+      text-align: left;
+      right: auto;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      padding-left: 0px;
+      width: 100%;
+    }
+    .pub-info {
+      text-align: left;
+      display: block;
+      margin-top: 60px;
+      position: absolute;
+    }
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+ul a {
+  display: inline;
+  font-family: sofiaLight;
+  border-radius: 5px;
+  background-color: #c2c1f8;
+  color: #000000;
+  padding: 3px;
+  text-decoration: none;
+  height:30px;
+  width:auto;
+  border-style: solid;
 
 }
 
-.contact_bg {
-  	margin-top: 60px;
-	margin-left: 60px;
-	margin-right: 60px;
-    padding-bottom: 2cm;
-
-    /* The image used */
-    background-image: url("../images/contact-background-08.png");
-
-    /* Full height */
-    height: 100%;
-    width: 10%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.posts-wrapper {
-	max-width: 1000px;
-	margin-left:auto;
-	margin-right:auto;
+ul a:hover {
+  background-color: #e8e8f4;
+  text-decoration: underline;
 }
