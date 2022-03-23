@@ -50,11 +50,16 @@ body {
   font-family: sofiaBlack;
 }
 
+.navbar-item {
+  float: left;
+  font-family: sofiaLight;
+}
+
 .navbar-contact {
   border-left-style: solid;
   border-width: 2px;
   float: right;
-  font-family: sofiaLight
+  font-family: sofiaLight;
 }
 
 .navbar a {
@@ -126,7 +131,7 @@ body {
 
 .about {
   position: absolute;
-  top: 8%;
+  top: 5%;
   left:10%;
   width: 42%;
   float: left;
@@ -143,6 +148,14 @@ body {
 .publications {
   position: absolute;
   top: 33%;
+  left: 10%;
+  width: 77%;
+  float: left;
+}
+
+.teaching {
+  position: absolute;
+  top: 49%;
   left: 10%;
   width: 77%;
   float: left;
@@ -228,7 +241,14 @@ p {
         width: 80%;
         right: auto;
         left: 10%;
-        top: 43%;
+        top: 30%;
+    }
+    .teaching {
+        display: block;
+        width: 80%;
+        right: auto;
+        left: 10%;
+        top: 53%;
     }
     .container {
       padding-right: 15px;
