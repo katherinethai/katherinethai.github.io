@@ -9,8 +9,9 @@
 }
 
 @font-face {
-    font-family: sofiaSemiBold;
+    font-family: sofiaLight;
     src: url("fonts/Sofia Pro Semi Bold Az.otf") format("opentype");
+    font-weight: bold;
 }
 
 @font-face {
