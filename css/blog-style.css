@@ -45,6 +45,11 @@ body {
 
 }
 
+.navbar-item {
+  float: left;
+  font-family: sofiaLight;
+}
+
 .navbar-name {
   float: left;
   font-family: sofiaBlack;
@@ -90,9 +95,64 @@ body {
     text-align: left;
   }
 }
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 800px;
+  position: relative;
+}
+
+.contact-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  max-width: 300px;
+  position: relative;
+}
+
+h1 {
+  font-family: sofiaBold;
+  font-size: 55px;
+  text-align: left;
+}
+
+h2 {
+  font-family: sofiaBold;
+  font-size: 43px;
+  text-align: left;
+}
+
+h3 {
+  font-family: sofiaBold;
+  font-size: 30px;
+}
+
+h5 {
+  font-family: sofiaBlack;
+  font-size: 22px;
+}
 
 p {
   font-family: sofiaLight;
-  text-align: left;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.post-title a:hover {
+  text-decoration: underline;
+  color: #000000;
+}
+
+ol {
+  font-family: sofiaLight;
+  font-size: 18px;
 }

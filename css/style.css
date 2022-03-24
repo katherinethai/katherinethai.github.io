@@ -147,7 +147,7 @@ body {
 
 .publications {
   position: absolute;
-  top: 33%;
+  top: 35%;
   left: 10%;
   width: 77%;
   float: left;
@@ -231,7 +231,7 @@ p {
         display: block;
         margin-bottom: 35px;
         width: 85%;
-        top: 3%;
+        top: 0%;
     }
     .pub-num {
       display: none;
@@ -241,14 +241,14 @@ p {
         width: 80%;
         right: auto;
         left: 10%;
-        top: 30%;
+        top: 46%;
     }
     .teaching {
         display: block;
         width: 80%;
         right: auto;
         left: 10%;
-        top: 53%;
+        top: 77%;
     }
     .container {
       padding-right: 15px;
