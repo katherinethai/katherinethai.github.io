@@ -135,14 +135,7 @@ body {
   left:10%;
   width: 42%;
   float: left;
-}
 
-.publications-header {
-  position: absolute;
-  top: 33%;
-  left:10%;
-  width: 42%;
-  float: left;
 }
 
 .publications {
@@ -155,7 +148,7 @@ body {
 
 .teaching {
   position: absolute;
-  top: 53%;
+  top: 62%;
   left: 10%;
   width: 77%;
   float: left;
@@ -194,10 +187,23 @@ p {
 .pub-num {
   display: block;
   float: left;
+  margin-block-start: .5em;
+  margin-block-end: 0;
 }
 
 #pub-header {
   float: left;
+}
+
+.pub-first-title {
+  display: block;
+  float: right;
+  text-align: right;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-left: 5px;
 }
 
 .pub-title {
@@ -208,11 +214,20 @@ p {
   margin-block-end: 0em;
   border-bottom-style: solid;
   border-bottom-width: 1px;
-  padding-left: 45px;
+  padding-left: 5px;
+}
+
+.pub-first-info {
+  text-align: right;
+  display: block;
+}
+
+.pub-header {
+  overflow: auto;
+  width: 100%
 }
 
 .pub-info {
-  margin-top: 120px;
   text-align: right;
   display: block;
 }
@@ -241,14 +256,14 @@ p {
         width: 80%;
         right: auto;
         left: 10%;
-        top: 48%;
+        top: 32vh;
     }
     .teaching {
         display: block;
         width: 80%;
         right: auto;
         left: 10%;
-        top: 78%;
+        top: 61vh;
     }
     .container {
       padding-right: 15px;
@@ -263,6 +278,7 @@ p {
     h3 {
       font-size: 15px;
     }
+
     .pub-title {
       text-align: left;
       right: auto;
@@ -271,13 +287,62 @@ p {
       border-bottom-style: solid;
       border-bottom-width: 1px;
       padding-left: 0px;
+      margin-bottom: 10px;
       width: 100%;
+      height: auto;
+    }
+    .pub-first-info {
+      font-size: 13px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: right;
+      display: block;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
     }
     .pub-info {
-      text-align: left;
+      font-size: 13px;
+      text-align: right;
       display: block;
-      margin-top: 60px;
-      position: absolute;
+      width: 100%;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .pub-info p {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+    }
+    .pub-first-info p{
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .publications {
+        top: 37vh;
+    }
+    .teaching {
+        top: 70vh;
+    }
+}
+
+@media only screen and (max-width: 393px) {
+    .publications {
+        top: 42vh;
+    }
+    .teaching {
+        top: 73vh;
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    .publications {
+        top: 57vh;
+    }
+    .teaching {
+        top: 104vh;
     }
 }
 

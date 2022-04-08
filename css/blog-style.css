@@ -156,3 +156,13 @@ ol {
   font-family: sofiaLight;
   font-size: 18px;
 }
+
+ul {
+  font-family: sofiaLight;
+  font-size: 18px;
+  list-style-type: none;
+}
+
+.lost-list li {
+  padding: 0 0 7px 0;
+}
