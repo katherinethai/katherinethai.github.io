@@ -319,30 +319,40 @@ p {
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 650px) {
     .publications {
-        top: 37vh;
+        top: 42vh;
     }
     .teaching {
-        top: 70vh;
+        top: 76vh;
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    .publications {
+        top: 42vh;
+    }
+    .teaching {
+        top: 76vh;
     }
 }
 
 @media only screen and (max-width: 393px) {
     .publications {
-        top: 42vh;
+        top: 53vh;
     }
     .teaching {
-        top: 73vh;
+        top: 91vh;
     }
 }
 
 @media only screen and (max-width: 281px) {
     .publications {
-        top: 57vh;
+        top: 62vh;
     }
     .teaching {
-        top: 104vh;
+        top: 109vh;
     }
 }
 
