@@ -24,8 +24,8 @@
   <div class="navbar" id="myNavbar"  id="home">
     <a href="index.html" class="navbar-name">KATHERINE THAI</a>
     <a href="index.html#pub-header" class="navbar-item">PUBLICATIONS</a>
-    <a href="index.html#teaching-header" class="navbar-item">TEACHING</a>
-    <a href="index.html#crochet-header" class="navbar-item">CROCHET</a>
+    <!-- <a href="index.html#teaching-header" class="navbar-item">TEACHING</a>
+    <a href="index.html#crochet-header" class="navbar-item">CROCHET</a> -->
     <!--<a href="blog-index.html" class="navbar-item">BLOG</a>-->
     <a href="contact.html" class="navbar-contact" id="navbar-contact">CONTACT</a>
     <a href="javascript:void(0);" class="icon" onclick="iconFunction()">
@@ -40,19 +40,43 @@
     </div>
     <div class="about">
         <h1>About</h1>
-        <p>I am a fourth year PhD student in Computer Science at UMass Amherst advised by <a href="https://people.cs.umass.edu/~miyyer/">Mohit Iyyer</a> and a member of <a href="https://nlp.cs.umass.edu/">UMass NLP</a>.
-            <br><br>
-            As an avid <a href="index.html#crochet-header">crocheter</a>, I'm currently interested in the ability of Large Language Models (LLMs) to do implicit 3-D modeling when provided with text-only instructions and descriptions for modular objects. Previously, I worked on applying NLP methods to the literary texts, machine translation + evaluation metrics, and detailed human evaluation + annotation collection.
-            <br><br>
-            Previously, I was an undergraduate at Rutgers University where I majored in Math, English, and Computer Science. Before transferring to Rutgers, I spent one semester at the University of Edinburgh.
-             I've participated in 4 NSF REUs and done research in cool places like Hong Kong and the American Museum of Natural History in NYC.
-            <br><br>
-            My other interests include the color purple, skating, dogs (small huskies in particular), Kazuo Ishiguro, teaching/mentoring high school students, makeup/skincare, karaoke, and <a href="https://open.spotify.com/playlist/3gKyKK54RJ0OqN2bRhPLLI?si=13087acf8c6b424d">very specific Spotify playlists</a>.
-            <br><br>
-            In my spare time, I assist historian <a href="https://greenberg.rutgers.edu/">David Greenberg</a> with his current project, a <a href="https://www.nytimes.com/2021/04/14/arts/national-endowment-for-the-humanities-grants.html">biography of the late Congressman John Lewis</a>.</p>
+        <p>I am a fifth year PhD student in Computer Science at UMass Amherst advised by <a href="https://www.cs.umd.edu/~miyyer/">Mohit Iyyer</a> who is now a professor at the University of Maryland.
+        <br><br>
+        My current research interests are in:
+        <ul>
+          <li>long-context language models, particularly their evaluation and their applications to literary texts</li>
+          <li>computer-use agents and how to improve their abilities to perform complex web-browsing tasks</li>
+        </ul>
+        <p>Previously, I worked on machine translation, evaluation metrics, and detailed human evaluation + annotation collection.
+        <br><br>
+        Before coming to UMass, I was an undergraduate at Rutgers University where I majored in Math, English, and Computer Science. Prior to transferring to Rutgers, I spent one semester at the University of Edinburgh.
+        I've participated in 4 NSF REUs and done research in cool places like Hong Kong and the American Museum of Natural History in NYC.</p>
     </div>
     <div class="publications">
         <h1 id="pub-header">Publications</h1>
+        <div class="pub-header" style="margin-top: 60px;">
+          <h3 class="pub-title" >BEARCUBS: A Benchmark for Computer-Using Web Agents</h3>
+          <!-- <h2 class="pub-num">01</h2> -->
+      </div>
+      <div class="pub-info">
+          <p>Yixiao Song, <b>Katherine Thai</b>, Chau Minh Pham, Yapei Chang, Mazin Nadaf, and Mohit Iyyer</p>
+          <ul>
+            <a href="https://arxiv.org/abs/2503.07919" class="button">Paper</a>
+            <a href="https://bear-cubs.github.io/" class="button">Website</a>
+          </ul>
+      </div>
+      <div class="pub-header" style="margin-top: 60px;">
+        <h3 class="pub-title" >One Thousand and One Pairs: A "Novel" Challenge for Long-Context Language Models</h3>
+        <!-- <h2 class="pub-num">01</h2> -->
+    </div>
+    <div class="pub-info">
+        <p>Marzena Karpinska, <b>Katherine Thai</b>, Kyle Lo, Tanya Goyal, and Mohit Iyyer</p>
+        <p><i>EMNLP 2024</i></p>
+        <ul>
+          <a href="https://arxiv.org/abs/2406.16264" class="button">Paper</a>
+          <a href="https://novelchallenge.github.io/" class="button">Website</a>
+        </ul>
+    </div>
         <div class="pub-header" style="margin-top: 60px;">
             <h3 class="pub-title" >Exploring Document-Level Literary Machine Translation with Parallel Paragraphs from World Literature</h3>
             <!-- <h2 class="pub-num">01</h2> -->
@@ -107,18 +131,18 @@
         <h1 id="teaching-header">Teaching</h1>
         <div class="teaching-info">
             <p>I was a teaching assistant for <a href="https://people.cs.umass.edu/~miyyer/cs685_f21/index.html"><i>CS685 Advanced Natural Language Processing (Fall 2021)</i></a> at UMass Amherst.</p>
-            <p>As an undergraduate, I was a tutor/mentor for Rutgers University's <a href="https://odasis.rutgers.edu/">Office for Diversity and Academic Success in the Sciences</a> (ODASIS). I taught weekly Saturday classes to 20+
+            <p>As an undergraduate, I was a tutor/mentor for Rutgers University's <a href="https://odasis.rutgers.edu/">Office for Diversity and Academic Success in the Sciences</a> (ODASIS) for four years. I taught weekly Saturday classes to 20+
               high school juniors and seniors in Algebra, English Composition, and SAT prep.</p>
     </div>
 
-    <div class="crochet">
+    <!-- <div class="crochet">
         <h1 id="crochet-header">Crochet</h1>
         <div class="crochet-info">
             <p>I design and write patterns for crochet wearables. Patterns are available for purchase from my <a href="https://tittytopsbyk.etsy.com">Etsy</a> shop. To see my work, head to my <a href="https://instagram.com/tittytopsbyk">Instagram.</a></p>
         </div>
-    <div class="footer">
+    <div class="footer"> -->
       
-      <p>The layout and graphics for this site were designed by the talented <a href="https://sreeddesign.myportfolio.com/work">Sara Reed</a>.</p> <br><br>
+      <p>The layout and graphics for this site were designed by <a href="https://sreeddesign.myportfolio.com/work">Sara Reed</a>.</p> <br><br>
     </div>
   </div>
 

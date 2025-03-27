@@ -148,7 +148,7 @@ body {
 
 .teaching {
   position: absolute;
-  top: 90%;
+  top: 110%;
   left: 10%;
   width: 77%;
   float: left;
@@ -263,7 +263,7 @@ p {
         width: 80%;
         right: auto;
         left: 10%;
-        top: 95vh;
+        top: 135vh;
     }
     .container {
       padding-right: 15px;
@@ -324,17 +324,16 @@ p {
         top: 42vh;
     }
     .teaching {
-        top: 99vh;
+        top: 145vh;
     }
 }
-
 
 @media only screen and (max-width: 540px) {
     .publications {
         top: 42vh;
     }
     .teaching {
-        top: 90vh;
+        top: 155vh;
     }
 }
 
@@ -343,7 +342,7 @@ p {
         top: 53vh;
     }
     .teaching {
-        top: 131vh;
+        top: 165vh;
     }
 }
 
@@ -352,12 +351,26 @@ p {
         top: 62vh;
     }
     .teaching {
-        top: 129vh;
+        top: 175vh;
     }
 }
 
 ul {
-  padding-inline-start: 0px;
+  padding-inline-start: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  font-family: sofiaLight;
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  li {
+    font-size: 12px;
+  }
 }
 
 ul a {
